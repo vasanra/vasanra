@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Themed Website</title>
+  <style>
+    /* Default theme */
+    body {
+      background-color: #f0f0f0;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Dark theme */
+    body.dark {
+      background-color: #333;
+      color: #f0f0f0;
+    }
+
+    /* Light theme */
+    body.light {
+      background-color: #f9f9f9;
+      color: #555;
+    }
+
+    /* Theme switcher styles */
+    #theme-switcher {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Theme switcher -->
+  <div id="theme-switcher">
+    <button onclick="setTheme('default')">Default</button>
+    <button onclick="setTheme('dark')">Dark</button>
+    <button onclick="setTheme('light')">Light</button>
+  </div>
+
+  <h1>Welcome to My Website</h1>
+  <p>This is a simple website demonstrating different themes using HTML and CSS.</p>
+
+  <script>
+    // Function to set theme
+    function setTheme(themeName) {
+      document.body.className = themeName;
+    }
+  </script>
+
+</body>
+</html>
